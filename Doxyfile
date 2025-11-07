@@ -1,0 +1,103 @@
+# Doxyfile - configuration for Doxygen documentation
+#
+# This file documents the important settings for generating documentation
+# for the C++ sources present in this repository. The file is heavily
+# commented so you can tune settings if needed. Do NOT modify source
+# files' logic; this file only describes how Doxygen should parse them.
+#
+# Generate HTML documentation in the `docs/html` folder by default.
+
+# Project identification
+PROJECT_NAME           = "decodificador"
+PROJECT_NUMBER         = 1.0
+
+# Configuración de idioma y codificación
+OUTPUT_LANGUAGE        = Spanish
+INPUT_ENCODING        = UTF-8
+
+# Texto descriptivo del proyecto
+PROJECT_BRIEF         = "Decodificador de Protocolo Industrial PRT-7 que procesa tramas LOAD y MAP"
+PROJECT_LOGO          = 
+
+# Where the generated documentation will be written (relative or absolute)
+OUTPUT_DIRECTORY       = docs
+
+#--------------------------------------------------------------------------
+# Build related options
+#--------------------------------------------------------------------------
+# If the repository contains code examples or external files you don't
+# want to document, add them to EXCLUDE.
+EXTRACT_ALL            = YES    # Extract documentation even if no doc comments present
+EXTRACT_PRIVATE        = YES    # Include private class members
+EXTRACT_STATIC         = YES    # Include static members
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Turn off LaTeX generation unless you need PDF exports
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+GENERATE_XML           = NO
+
+#--------------------------------------------------------------------------
+# Input
+#--------------------------------------------------------------------------
+# By default we document the whole repository. FILE_PATTERNS restricts
+# which files are parsed. RECURSIVE=YES enables searching subdirectories.
+INPUT                  = .
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.hpp *.hh *.c *.cpp *.cc
+
+# Exclude common build folders (adjust if you add other build dirs)
+EXCLUDE                = build
+
+#--------------------------------------------------------------------------
+# Output customization
+#--------------------------------------------------------------------------
+# Put HTML into docs/html
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+GENERATE_TREEVIEW      = YES
+
+# Personalización de salida HTML
+HTML_HEADER          =
+HTML_FOOTER          =
+HTML_STYLESHEET      =
+HTML_EXTRA_STYLESHEET =
+HTML_COLORSTYLE      = LIGHT
+HTML_COLORSTYLE_HUE  = 220
+HTML_COLORSTYLE_SAT  = 100
+HTML_COLORSTYLE_GAMMA = 80
+
+# Show source code in the documentation
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+
+#--------------------------------------------------------------------------
+# Warnings and verbosity
+#--------------------------------------------------------------------------
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED  = YES   # Avisar sobre símbolos sin documentar
+WARN_IF_DOC_ERROR    = YES
+WARN_NO_PARAMDOC     = YES
+
+#--------------------------------------------------------------------------
+# Source browsing
+#--------------------------------------------------------------------------
+REFERENCES_RELATION    = YES
+REFERENCES_LINK_SOURCE = YES
+
+#--------------------------------------------------------------------------
+# Misc
+#--------------------------------------------------------------------------
+# If you want to strip part of the path from file names in the output,
+# set STRIP_FROM_PATH to the project root. Leave empty for default behaviour.
+STRIP_FROM_PATH        =
+
+# End of file. To generate docs locally:
+# 1) Install doxygen (e.g., apt install doxygen) if you don't have it.
+# 2) From the repository root run:
+#      doxygen Doxyfile
+#    or use the CMake target (if CMake was used to configure the project):
+#      mkdir -p build && cd build && cmake ..
+#      cmake --build . --target doc
+#

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>decodificador: Fichero Fuente RotorDeMapeo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">decodificador<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Decodificador de Protocolo Industrial PRT-7 que procesa tramas LOAD y MAP</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('RotorDeMapeo_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RotorDeMapeo.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="RotorDeMapeo_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once </span><span class="comment">//indica que entre solo una vez este archivo</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="structNodoRotor.html">    4</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNodoRotor.html">NodoRotor</a>{</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="structNodoRotor.html#a5a090f45885398a2ff3022d026be0a4f">    5</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structNodoRotor.html#a5a090f45885398a2ff3022d026be0a4f">letra</a>;<span class="comment">//hola</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structNodoRotor.html#a7f4f14c49e564c5c83838f605793485f">    6</a></span>    <a class="code hl_struct" href="structNodoRotor.html">NodoRotor</a>* <a class="code hl_variable" href="structNodoRotor.html#a7f4f14c49e564c5c83838f605793485f">prev</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structNodoRotor.html#aa471e153715b8598c2cc63dd704a1d0c">    7</a></span>    <a class="code hl_struct" href="structNodoRotor.html">NodoRotor</a>* <a class="code hl_variable" href="structNodoRotor.html#aa471e153715b8598c2cc63dd704a1d0c">next</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classRotorDeMapeo.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classRotorDeMapeo.html">RotorDeMapeo</a>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classRotorDeMapeo.html#af30703c2ef2fca6e8998879962e7dc61">   11</a></span><a class="code hl_struct" href="structNodoRotor.html">NodoRotor</a>* <a class="code hl_variable" href="classRotorDeMapeo.html#af30703c2ef2fca6e8998879962e7dc61">head</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="classRotorDeMapeo.html#aa4a3be7c3ce2021244e4977e4ad856c9">RotorDeMapeo</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="classRotorDeMapeo.html#adc5f4bfe5b8d66ba7c9bac38f4be4c5c">~RotorDeMapeo</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRotorDeMapeo.html#ad221b5799dcf13def0afa76ae126ae0f">rotar</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">char</span> <a class="code hl_function" href="classRotorDeMapeo.html#a70d4ad4bcef4bd5cec9c8d2602859f5c">getMapeo</a>(<span class="keywordtype">char</span> in);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<div class="ttc" id="aclassRotorDeMapeo_html"><div class="ttname"><a href="classRotorDeMapeo.html">RotorDeMapeo</a></div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8h_source.html#l00010">RotorDeMapeo.h:10</a></div></div>
+<div class="ttc" id="aclassRotorDeMapeo_html_a70d4ad4bcef4bd5cec9c8d2602859f5c"><div class="ttname"><a href="classRotorDeMapeo.html#a70d4ad4bcef4bd5cec9c8d2602859f5c">RotorDeMapeo::getMapeo</a></div><div class="ttdeci">char getMapeo(char in)</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8cpp_source.html#l00042">RotorDeMapeo.cpp:42</a></div></div>
+<div class="ttc" id="aclassRotorDeMapeo_html_aa4a3be7c3ce2021244e4977e4ad856c9"><div class="ttname"><a href="classRotorDeMapeo.html#aa4a3be7c3ce2021244e4977e4ad856c9">RotorDeMapeo::RotorDeMapeo</a></div><div class="ttdeci">RotorDeMapeo()</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8cpp_source.html#l00003">RotorDeMapeo.cpp:3</a></div></div>
+<div class="ttc" id="aclassRotorDeMapeo_html_ad221b5799dcf13def0afa76ae126ae0f"><div class="ttname"><a href="classRotorDeMapeo.html#ad221b5799dcf13def0afa76ae126ae0f">RotorDeMapeo::rotar</a></div><div class="ttdeci">void rotar(int n)</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8cpp_source.html#l00030">RotorDeMapeo.cpp:30</a></div></div>
+<div class="ttc" id="aclassRotorDeMapeo_html_adc5f4bfe5b8d66ba7c9bac38f4be4c5c"><div class="ttname"><a href="classRotorDeMapeo.html#adc5f4bfe5b8d66ba7c9bac38f4be4c5c">RotorDeMapeo::~RotorDeMapeo</a></div><div class="ttdeci">~RotorDeMapeo()</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8cpp_source.html#l00017">RotorDeMapeo.cpp:17</a></div></div>
+<div class="ttc" id="aclassRotorDeMapeo_html_af30703c2ef2fca6e8998879962e7dc61"><div class="ttname"><a href="classRotorDeMapeo.html#af30703c2ef2fca6e8998879962e7dc61">RotorDeMapeo::head</a></div><div class="ttdeci">NodoRotor * head</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8h_source.html#l00011">RotorDeMapeo.h:11</a></div></div>
+<div class="ttc" id="astructNodoRotor_html"><div class="ttname"><a href="structNodoRotor.html">NodoRotor</a></div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8h_source.html#l00004">RotorDeMapeo.h:4</a></div></div>
+<div class="ttc" id="astructNodoRotor_html_a5a090f45885398a2ff3022d026be0a4f"><div class="ttname"><a href="structNodoRotor.html#a5a090f45885398a2ff3022d026be0a4f">NodoRotor::letra</a></div><div class="ttdeci">char letra</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8h_source.html#l00005">RotorDeMapeo.h:5</a></div></div>
+<div class="ttc" id="astructNodoRotor_html_a7f4f14c49e564c5c83838f605793485f"><div class="ttname"><a href="structNodoRotor.html#a7f4f14c49e564c5c83838f605793485f">NodoRotor::prev</a></div><div class="ttdeci">NodoRotor * prev</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8h_source.html#l00006">RotorDeMapeo.h:6</a></div></div>
+<div class="ttc" id="astructNodoRotor_html_aa471e153715b8598c2cc63dd704a1d0c"><div class="ttname"><a href="structNodoRotor.html#aa471e153715b8598c2cc63dd704a1d0c">NodoRotor::next</a></div><div class="ttdeci">NodoRotor * next</div><div class="ttdef"><b>Definition:</b> <a href="RotorDeMapeo_8h_source.html#l00007">RotorDeMapeo.h:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="RotorDeMapeo_8h.html">RotorDeMapeo.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>

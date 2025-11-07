@@ -1,0 +1,26 @@
+# Configuración básica
+PROJECT_NAME           = "Decodificador PRT-7"
+PROJECT_BRIEF         = "Decodificador de protocolo industrial para mensajes ocultos"
+OUTPUT_DIRECTORY      = @DOXYGEN_OUTPUT_DIR@
+INPUT                 = @DOXYGEN_INPUT_DIR@
+RECURSIVE             = YES
+
+# Configuración de salida
+GENERATE_HTML         = YES
+GENERATE_LATEX        = NO
+HTML_OUTPUT          = html
+
+# Configuración de análisis
+EXTRACT_ALL          = YES
+EXTRACT_PRIVATE      = YES
+EXTRACT_STATIC       = YES
+ENABLE_PREPROCESSING = YES
+
+# Configuración de gráficos
+HAVE_DOT             = YES
+UML_LOOK            = YES
+CALL_GRAPH          = YES
+CALLER_GRAPH        = YES
+
+# Configuración de idioma
+OUTPUT_LANGUAGE      = Spanish
