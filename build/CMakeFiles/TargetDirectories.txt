@@ -1,0 +1,3 @@
+/home/kirbystone/Escritorio/ds-unidad-2-actividad-2-listasenlazadas-KirbyStone69/build/CMakeFiles/decodificador.dir
+/home/kirbystone/Escritorio/ds-unidad-2-actividad-2-listasenlazadas-KirbyStone69/build/CMakeFiles/edit_cache.dir
+/home/kirbystone/Escritorio/ds-unidad-2-actividad-2-listasenlazadas-KirbyStone69/build/CMakeFiles/rebuild_cache.dir

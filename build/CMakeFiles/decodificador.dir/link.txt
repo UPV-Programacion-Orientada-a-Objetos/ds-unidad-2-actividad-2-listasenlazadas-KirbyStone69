@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/decodificador.dir/ListaDeCarga.cpp.o CMakeFiles/decodificador.dir/RotorDeMapeo.cpp.o CMakeFiles/decodificador.dir/TramaLoad.cpp.o CMakeFiles/decodificador.dir/TramaMap.cpp.o CMakeFiles/decodificador.dir/main.cpp.o -o decodificador 
